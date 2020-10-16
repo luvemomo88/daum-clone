@@ -3,7 +3,7 @@
 :root {
   --primary: #333;
   --dark: #111;
-  --accent: #1ee88e5;
+  --accent: #1e88e5;
   --grey-dark: #666;
   --grey-mid: #999;
   --grey-light: #e2e2e2;
@@ -53,32 +53,39 @@ a:hover {
 }
 
 .top_menu a {
-  text-indent:-9999px
+  text-indent: -9999px;
   width: 24px;
   height: 24px;
   /* background: red; */
-  margin:0 12px;
-  font-size:12px;
+  margin: 0 12px;
+  font-size: 12px;
   text-decoration: none;
-  color:var(--grey-dark)
+  color: var(--grey-dark);
 }
 
 .top_menu a:nth-child(1) {
   width: 52px;
-  border: 1px solid var(--gray-dark);
-  border-radius: 1px solid var(--grey-mid);
+  border: 1px solid var(--grey-mid);
+  border-radius: 2px;
   box-sizing: border-box;
   text-indent: 0;
   text-align: center;
-  line-height:20px ;
+  line-height: 22px;
 }
 
 .top_menu a:nth-child(2) {
-  background: url('../images/daum.png') no-repeat 0 -20px;
+  background: url("../images/daum.png") no-repeat 0 -20px;
+}
+
+.top_menu a:nth-child(2):hover {
+  background: url("../images/daum.png") no-repeat -60px -20px;
 }
 
 .top_menu a:nth-child(3) {
-  background: url('../images/daum.png') no-repeat 0 -30px -20px;
+  background: url("../images/daum.png") no-repeat -30px -20px;
   margin-right: 0;
 }
 
+.top_menu a:nth-child(3):hover {
+  background: url("../images/daum.png") no-repeat -90px -20px;
+}
